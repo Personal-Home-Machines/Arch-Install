@@ -89,7 +89,7 @@ git clone "https://aur.archlinux.org/yay.git"
 cd ~/yay
 
 echo "Building yay"
-# arch-chroot /mnt /usr/bin/runuser -u $user -- /PHM/build-yay.sh
+# arch-chroot /mnt /usr/bin/runuser -u $user -- /Arch-Install/build-yay.sh
 makepkg -si --noconfirm
 
 cd ~
@@ -104,7 +104,7 @@ sleep 3
 echo -e "\n\033[1;32mInstalling packages...\033[0m"
 
 echo "Grabbing pkgs (this may take a while)"
-yay -S --noconfirm --needed --noprogressbar - < /PHM/pkgs-plus.txt
+yay -S --noconfirm --needed --noprogressbar - < /Arch-Install/pkgs-plus.txt
 
 echo "Done..!"
 
