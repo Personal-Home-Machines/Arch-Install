@@ -406,7 +406,8 @@ sleep 3
 echo 'balis=true' >> Executed.txt
 echo 'user=$user' >> Executed.txt
 
-echo -e "\n\e[0;31mFinished! Run balis+ for a complete install.\e[0m"
-echo -e "\n\e[0;31mOr Type exit, take out the install device and reboot.\e[0m"
+arch-chroot /mnt /usr/bin/runuser -u $user -- /root/Arch-Install/balis-plus.sh
+
+echo -e "\n\e[0;31mFinished! Type exit, take out the install device and reboot.\e[0m"
 
 
