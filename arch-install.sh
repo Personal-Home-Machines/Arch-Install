@@ -20,12 +20,12 @@ echo
   
 if [[ $REPLY =~ ^[Nn]$ ]]; then
 		
-    arch-chroot /mnt /Arch-Install/balis.sh
+    arch-chroot /mnt /balis.sh
 		
 else
 	
     arch-chroot /mnt /Arch-Install/balis.sh
     source Executed.txt
-    arch-chroot /mnt /usr/bin/runuser -u $user -- /Arch-Install/balis-plus.sh
+    arch-chroot /mnt /usr/bin/runuser -u $user -- balis-plus.sh
 		
 fi
