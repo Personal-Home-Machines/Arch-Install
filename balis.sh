@@ -79,7 +79,7 @@ Password_double_check()
 # Installs packages from the *pkgs.txt* file
 Installing_pkgs()
 {
-	cat /PHM/pkgs.txt | while read line 
+	cat /Arch-Install/pkgs.txt | while read line 
 	
 	do
 	
@@ -92,7 +92,7 @@ Installing_pkgs()
 # Installs fonts from the *fonts.txt* file
 Installing_fonts()
 {
-	cat /PHM/fonts.txt | while read line 
+	cat /Arch-Install/fonts.txt | while read line 
 	
 	do
 	
@@ -406,8 +406,6 @@ sleep 3
 echo 'balis=true' >> Executed.txt
 echo 'user=$user' >> Executed.txt
 
-arch-chroot /mnt /usr/bin/runuser -u $user -- /root/Arch-Install/balis-plus.sh
-
-echo -e "\n\e[0;31mFinished! Type exit, take out the install device and reboot.\e[0m"
+echo -e "\n\e[0;31mFinished! Type exit, run balis +.\e[0m"
 
 
