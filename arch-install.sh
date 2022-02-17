@@ -24,7 +24,7 @@ if [[ $REPLY =~ ^[Nn]$ ]]; then
 		
 else
 	
-    arch-chroot /mnt /Arch-Install/balis.sh
+    arch-chroot /mnt balis.sh
     source Executed.txt
     arch-chroot /mnt /usr/bin/runuser -u $user -- balis-plus.sh
 		
