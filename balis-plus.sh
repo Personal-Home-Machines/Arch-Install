@@ -81,7 +81,7 @@ echo -e "\n\033[1;32mInstalling AUR helper...\033[0m"
 
 cd ~
 echo "Installing packages"
-pacman -S --needed --noconfirm --noprogressbar --quiet base-devel
+pacman -S --needed --noconfirm --noprogressbar --quiet base-devel gcc
 
 echo "Cloning yay into the home directory"
 git clone "https://aur.archlinux.org/yay.git"
@@ -89,7 +89,6 @@ git clone "https://aur.archlinux.org/yay.git"
 cd ~/yay
 
 echo "Building yay"
-# arch-chroot /mnt /usr/bin/runuser -u $user -- /Arch-Install/build-yay.sh
 makepkg -si --noconfirm
 
 cd ~
