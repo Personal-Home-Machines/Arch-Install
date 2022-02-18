@@ -1,6 +1,6 @@
 base-devel
 xorg
-xinit
+xorg-xinit
 xorg-xrdb
 alacritty
 bspwm
