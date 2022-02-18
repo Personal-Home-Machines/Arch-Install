@@ -5,6 +5,7 @@ alsa-plugins
 alsa-utils
 autoconf
 automake
+archlinux-keyring
 avahi
 bash-completion
 bluez
@@ -45,6 +46,7 @@ pkgconf
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+python-pip
 sof-firmware
 unrar
 unzip
