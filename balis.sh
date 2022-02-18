@@ -176,7 +176,7 @@ Create_keymap()
 	else
 	 
 		echo "Creating custom keymap to swap Caps with Esc"
-		cp /PHM/swap-capslock-with-escape.map /usr/share/kbd/keymaps/
+		cp /Arch-Install/swap-capslock-with-escape.map /usr/share/kbd/keymaps/
 		echo "KEYMAP=swap-capslock-with-escape.map" >> /etc/vconsole.conf
 
 	fi
