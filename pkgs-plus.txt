@@ -19,6 +19,7 @@ jupyter-notebook
 lf
 libreoffice-fresh-en-gb
 min
+mpv
 mkinitcpio-colors-git
 neofetch
 nitrogen
@@ -35,7 +36,6 @@ spotifyd
 sxhkd
 tmux
 tmux-bash-completion-git
-vlc
 w3m
 xdg-open
 xdg-user-dirs
